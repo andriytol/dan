@@ -87,18 +87,45 @@ body {
 }
 
 .btn {
+  min-width: 160px;
+  height: 40px;
   font-family: inherit;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.09em;
   text-transform: uppercase;
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+  background-color: transparent;
 }
 
 /* HEADER------------------------------------------HEADER */
 
 .header {
   background-color: gray;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  margin-right: 131px;
+}
+
+.header-connect {
+  margin-left: auto;
+}
+
+.header-list {
+  display: flex;
 }
 
 .header-link {
@@ -138,7 +165,21 @@ body {
 /* HERO------------------------------------------HERO */
 
 .hero {
-  background-color: blue;
+  
+}
+
+.hero-container {
+  display: flex;
+}
+
+.hero-list {
+  width: 100px;
+}
+
+.hero-wrap {
+  background-color: #3d3e45;
+  padding: 272px 100px 208px 100px;
+  flex-grow: 1;
 }
 
 .hero-link {
@@ -178,6 +219,20 @@ body {
 
 .about {
   
+}
+
+.about-container {
+  display: flex;
+  gap: 30px;
+}
+
+.about-list {
+  display: flex;
+  gap: 30px;
+}
+
+.about-wrap {
+  max-width: 470px;
 }
 
 .about-pre-title {
@@ -228,12 +283,24 @@ body {
   margin-bottom: 44px;
 }
 
+.prices-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
 .prices-list {
   outline: 1px solid #ffffff;
   padding: 30px 20px;
+  width: calc((100% - 30px) / 2);
 }
 
 .prices-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.prices-item + .prices-item {
+  margin-top: 20px;
 }
 
 .prices-list-text {
@@ -323,9 +390,12 @@ body {
 }
 
 .barbers-list {
+  display: flex;
+  gap: 30px;
 }
 
 .barbers-item {
+  flex-basis: calc((100% - 60px) / 3);
 }
 
 .barbers-wrap {
@@ -355,6 +425,15 @@ body {
 .gallery-pre-title {
   color: #303030;
   margin-bottom: 20px;
+}
+
+.gallery-list {
+  display: flex;
+  gap: 30px;
+}
+
+.gallery-item {
+  flex-basis: calc((100% - 90px) / 4);
 }
 
 /* ONLINE------------------------------------------ONLINE */
