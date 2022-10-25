@@ -24,9 +24,11 @@
     <header class="header">
       <div class="container header-container">
         <nav class="header-navigation">
-          <a class="header-logo" href="./index.html"
-            ><img src="./images/logo.svg" alt="logo"
-          /></a>
+          <a class="header-logo" href="./index.html">
+            <svg class="logo-icon" width="69" height="55">
+              <use href="./images/sprite.svg#icon-logo"></use>
+            </svg>
+          </a>
           <ul class="header-list list">
             <li class="header-item">
               <a class="header-link link current" href="">About</a>
@@ -173,7 +175,7 @@
       </section>
 
       <section class="benefits section">
-        <div class="container">
+        <div class="container benefits-container">
           <ul class="benefits-list list">
             <li class="benefits-item">
               <span>600</span>
@@ -192,14 +194,16 @@
               <p class="benefits-item-text">Gifts for regular customers</p>
             </li>
           </ul>
-          <p class="benefits-pre-title pre-title">Old traditional school</p>
-          <h2 class="benefits-title section-title">
-            <span>?</span>Why people come to us?
-          </h2>
-          <p class="benefits-after-title">
-            Only good things are said about us. But it's better to see and feel
-            1 time than read 10 times.
-          </p>
+          <div class="benefits-wrap">
+            <p class="benefits-pre-title pre-title">Old traditional school</p>
+            <h2 class="benefits-title section-title">
+              Why people come to us?
+            </h2>
+            <p class="benefits-after-title">
+              Only good things are said about us. But it's better to see and feel
+              1 time than read 10 times.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -323,37 +327,41 @@
         </div>
       </section>
 
-      <section class="online section">
-        <h2 class="online-title section-title">Online-booking</h2>
-      </section>
-
-      <section class="contacts section">
-        <h2 class="contacts-title section-title">Contacts</h2>
-        <address class="contacts-address">
-          <a
-            class="contacts-map-link link"
-            href="https://goo.gl/maps/aKX2TLHzaAjw97Gr9"
-            target="_blank"
-            rel="noopener noreferrer nofollow"
-            >st. Vasilkivska, 7A <br />
-            Kyiv, 08132</a
-          >
-          <ul class="contacts-list list">
-            <li class="contacts-item">
-              <a class="contacts-link link" href="tel:+380441111111"
-                >+38 044 111 11 11</a
+      <div class="contact-wrap">
+        <div class="container">
+          <section class="online section">
+            <h2 class="online-title section-title">Online-booking</h2>
+          </section>
+    
+          <section class="contacts section">
+            <h2 class="contacts-title section-title">Contacts</h2>
+            <address class="contacts-address">
+              <a
+                class="contacts-map-link link"
+                href="https://goo.gl/maps/aKX2TLHzaAjw97Gr9"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                >st. Vasilkivska, 7A <br />
+                Kyiv, 08132</a
               >
-            </li>
-            <li class="contacts-item">
-              <a class="contacts-link" href="mailto:barbershop@email.com"
-                >barbershop@email.com</a
-              >
-            </li>
-          </ul>
-        </address>
-        <p class="contacts-subtitle">Working hours</p>
-        <p class="contacts-schedule">Every day from 9:00 to 22:00</p>
-      </section>
+              <ul class="contacts-list list">
+                <li class="contacts-item">
+                  <a class="contacts-link link" href="tel:+380441111111"
+                    >+38 044 111 11 11</a
+                  >
+                </li>
+                <li class="contacts-item">
+                  <a class="contacts-link" href="mailto:barbershop@email.com"
+                    >barbershop@email.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <p class="contacts-subtitle">Working hours</p>
+            <p class="contacts-schedule">Every day from 9:00 to 22:00</p>
+          </section>
+        </div>
+      </div>
     </main>
 
     <footer>
